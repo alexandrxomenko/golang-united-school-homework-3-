@@ -1,6 +1,9 @@
 package homework
 
 func average(input [15]float32) (result float32) {
-	//Place your code here
-	return
+	var count float32
+	for _, val := range input {
+		count += val
+	}
+	return count / 15
 }
